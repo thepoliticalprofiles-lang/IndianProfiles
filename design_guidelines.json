@@ -1,0 +1,107 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast (Adapted for Indian Political Context)",
+  "emotional_tone": "Authoritative, Transparent, Culturally Rooted, and Action-Oriented",
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "heading_font_fallback": "Outfit",
+    "body_font": "Work Sans",
+    "body_font_fallback": "sans-serif",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-stone-500",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-blue-600"
+    }
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#2563eb",
+      "hover": "#1d4ed8",
+      "light": "#dbeafe",
+      "name": "Gradient Blue"
+    },
+    "secondary": {
+      "DEFAULT": "#059669",
+      "hover": "#047857",
+      "light": "#d1fae5",
+      "name": "Mat/Emerald Green"
+    },
+    "background": {
+      "page": "#fafaf9",
+      "card": "#ffffff",
+      "muted": "#f5f5f4"
+    },
+    "text": {
+      "primary": "#1c1917",
+      "secondary": "#57534e",
+      "muted": "#a8a29e"
+    },
+    "border": {
+      "DEFAULT": "#e7e5e4",
+      "focus": "#2563eb"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing for Public Site (p-8 to p-12), Dense Control-Room Grid for Admin Dashboard (p-4 to p-6).",
+    "public_site_grid": "Bento Grid Mode A (The Tetris Grid). Mix col-span-4 and col-span-8 for asymmetrical, engaging content consumption.",
+    "admin_dashboard_grid": "Control Room Grid Mode B. Dense data, tight gaps (gap-4 or gap-6).",
+    "border_radius": "rounded-xl for public site sections, rounded-md for admin dashboard components."
+  },
+  "surface_strategies": {
+    "header": "Glassmorphism: backdrop-blur-xl bg-white/80 border-b border-stone-200. Must remain highly legible.",
+    "hero_overlay": "bg-gradient-to-r from-stone-900/80 via-stone-900/50 to-transparent. Never use flat heavy black.",
+    "cards": "Flat background (bg-white), 1px subtle border (border-stone-200), hover state: -translate-y-1 shadow-lg shadow-blue-900/5 transition-all duration-300."
+  },
+  "motion_and_interaction": {
+    "hover_states": "Buttons must shift background to a darker hue and retain high contrast text. Cards must lift slightly.",
+    "transitions": "transition-all duration-300 ease-out",
+    "focus": "focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+  },
+  "components_instructions": {
+    "html_vs_shadcn": "Use HTML/Tailwind pure layout for marketing sections (Hero, Features, Bento). Use Shadcn ONLY for interactive logic (Tabs, Dialogs, Select, Tables, Forms).",
+    "admin_dashboard": "Use Shadcn components extensively for data grids, tables, and configuration forms. Use Recharts for any data visualization (e.g., grievance analytics).",
+    "icons": "Use lucide-react (already installed). Standardize size and stroke-width (e.g., w-5 h-5 stroke-[1.5]).",
+    "testing": "All interactive elements MUST include data-testid attributes (e.g., data-testid=\"hero-cta-button\")."
+  },
+  "media": {
+    "hero_image_rally": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/bd846000-f877-4929-8c3b-8205ac2a49b2/images/5eaf214025a85bf93e203226736ccf9df37828a9cbf3ce16c1b4754f83d5e28b.png",
+      "description": "High energy political rally with optimistic sunset lighting."
+    },
+    "constituency_map_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/bd846000-f877-4929-8c3b-8205ac2a49b2/images/d1b8f3fbb9e49549f880a1f3fcac0fabde6662435f9a0bbd0c89effd230ba794.png",
+      "description": "Interactive map background showing regions highlighted in blue and green."
+    },
+    "lotus_logo": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/bd846000-f877-4929-8c3b-8205ac2a49b2/images/d9af70f81be150fc67af6db279d0bd84db726f196aa59f0f41575a4f6ef1aad1.png",
+      "description": "3D lotus logo representing the platform brand."
+    },
+    "leader_portrait_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/bd846000-f877-4929-8c3b-8205ac2a49b2/images/94bd5002052581770892cb5a9943600d499b121d020a159d0f69c83494c001ef.png",
+      "description": "Clean, authoritative studio background for leader profiles."
+    },
+    "parliament_building": {
+      "url": "https://images.unsplash.com/photo-1760872645826-ff7a32cd59bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBwYXJsaWFtZW50JTIwYnVpbGRpbmd8ZW58MHx8fHwxNzc1MTE0MzM2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Indian parliament building for development and governance sections."
+    },
+    "crowd_interaction": {
+      "url": "https://images.unsplash.com/photo-1699112220879-ca9ad696633a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBjcm93ZCUyMHBvbGl0aWNhbCUyMHJhbGx5fGVufDB8fHx8MTc3NTExNDMzNnww&ixlib=rb-4.1.0&q=85",
+      "description": "Crowd and rally for volunteer and community engagement sections."
+    }
+  },
+  "pages_to_build": [
+    "Public Site: Home Page (Hero, Constituency Search, Latest News/Activity)",
+    "Public Site: Constituency Details (Sub-Regions, Local Leaders, Map)",
+    "Public Site: Leader Profile (Biography, Timeline of Career, Development Works)",
+    "Public Site: Get Involved (Grievance Form, Volunteer Registration, Event Calendar)",
+    "Admin Dashboard: Overview/Analytics (Charts, Metrics)",
+    "Admin Dashboard: Geography Manager (Add/Edit Constituencies)",
+    "Admin Dashboard: Profile Manager (Rich Text Bio/Timeline)",
+    "Admin Dashboard: Article & Tagging Editor",
+    "Admin Dashboard: Grievance Desk"
+  ]
+}

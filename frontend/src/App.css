@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ========== BASE ========== */
+body {
+  font-family: 'Work Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #faf7f2;
+  color: #1a1b5c;
+}
+
+/* ========== Custom scrollbar ========== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f1eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4cfc5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1b5c;
+}
+
+/* ========== Rich text editor styles ========== */
+.ql-container {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+
+.ql-editor {
+  min-height: 200px;
+}
+
+.ql-toolbar {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: #faf7f2;
+}
+
+.ql-container {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* ========== Timeline (brand-colored gradient) ========== */
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #f57c00, #e91e63, #1a1b5c);
+}
+
+/* ========== Card hover effects ========== */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 25px -5px rgba(26, 27, 92, 0.12),
+    0 8px 10px -6px rgba(245, 124, 0, 0.08);
+}
+
+/* ========== Glassmorphism header ========== */
+.glass-header {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* ========== Hero overlay gradient (brand navy dominant) ========== */
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(13, 14, 58, 0.90),
+    rgba(26, 27, 92, 0.65),
+    rgba(26, 27, 92, 0.15)
+  );
+}
+
+/* Brand gradient utilities */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #f57c00 0%, #e91e63 100%);
+}
+
+.bg-brand-navy-gradient {
+  background: linear-gradient(135deg, #1a1b5c 0%, #2a2c86 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(90deg, #f57c00, #e91e63);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Text brand colors (direct utility) */
+.text-brand-navy { color: #1a1b5c; }
+.text-brand-orange { color: #f57c00; }
+.text-brand-magenta { color: #e91e63; }
+.bg-brand-navy { background-color: #1a1b5c; }
+.bg-brand-orange { background-color: #f57c00; }
+.bg-brand-magenta { background-color: #e91e63; }
+.border-brand-navy { border-color: #1a1b5c; }
+.border-brand-orange { border-color: #f57c00; }
+.border-brand-magenta { border-color: #e91e63; }
+
+/* ========== Badge pill styles ========== */
+.badge-pill {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+}
+
+/* ========== Animation keyframes ========== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-out forwards;
+}
+
+/* Staggered animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* ========== Admin sidebar ========== */
+.admin-sidebar {
+  width: 280px;
+  min-height: 100vh;
+}
+
+.admin-content {
+  margin-left: 280px;
+  min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .admin-sidebar {
+    position: fixed;
+    z-index: 50;
+    transform: translateX(-100%);
+  }
+  .admin-sidebar.open { transform: translateX(0); }
+  .admin-content { margin-left: 0; }
+}
+
+/* ========== Focus styles (brand orange) ========== */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2;
+}
+
+/* ========== Article content ========== */
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  @apply font-semibold mt-6 mb-3;
+  color: #1a1b5c;
+}
+
+.article-content h1 { @apply text-2xl; }
+.article-content h2 { @apply text-xl; }
+.article-content h3 { @apply text-lg; }
+
+.article-content p {
+  @apply text-stone-600 leading-relaxed mb-4;
+}
+
+.article-content ul,
+.article-content ol {
+  @apply pl-6 mb-4 text-stone-600;
+}
+
+.article-content ul { @apply list-disc; }
+.article-content ol { @apply list-decimal; }
+
+.article-content a {
+  color: #f57c00;
+  text-decoration: underline;
+}
+.article-content a:hover { color: #e91e63; }
+
+.article-content img {
+  @apply rounded-lg my-4;
+}
+
+.article-content blockquote {
+  @apply pl-4 italic text-stone-500 my-4;
+  border-left: 4px solid #f57c00;
+}

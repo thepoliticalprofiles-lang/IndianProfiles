@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Copy all files from cloned repo to /app (replacing template)",
+    "status": "completed"
+  },
+  {
+    "content": "Configure .env files with Supabase credentials (backend) — keep REACT_APP_BACKEND_URL intact (frontend)",
+    "status": "completed"
+  },
+  {
+    "content": "Upload new Indian Profiles logo and get public URL",
+    "status": "completed"
+  },
+  {
+    "content": "Rebrand all 'Jagruthi Leaders' → 'Indian Profiles' references (frontend + backend)",
+    "status": "completed"
+  },
+  {
+    "content": "Update color scheme to logo palette (Navy #1A237E, Orange #F57C00, Magenta/Pink #E91E63)",
+    "status": "completed"
+  },
+  {
+    "content": "Install dependencies (pip install + yarn install)",
+    "status": "completed"
+  },
+  {
+    "content": "Apply Supabase DB schema migration (new tables + columns)",
+    "status": "completed"
+  },
+  {
+    "content": "Restart services and verify backend health, admin login works",
+    "status": "completed"
+  },
+  {
+    "content": "Screenshot frontend to verify UI branding and colors",
+    "status": "completed"
+  },
+  {
+    "content": "Manually test key CRUD flows via curl (state/district/constituency/leader)",
+    "status": "completed"
+  },
+  {
+    "content": "Run testing agent for end-to-end validation",
+    "status": "in_progress"
+  },
+  {
+    "content": "Push rebranded code back to GitHub as 'Indian Profiles'",
+    "status": "pending"
+  }
+]
