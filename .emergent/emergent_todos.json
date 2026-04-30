@@ -4,11 +4,11 @@
     "status": "completed"
   },
   {
-    "content": "Configure .env files with Supabase credentials (backend) — keep REACT_APP_BACKEND_URL intact (frontend)",
+    "content": "Configure .env files with Supabase credentials (backend)",
     "status": "completed"
   },
   {
-    "content": "Upload new Indian Profiles logo and get public URL",
+    "content": "Upload new Indian Profiles logo and serve from /logo/indian-profiles-logo.png",
     "status": "completed"
   },
   {
@@ -16,7 +16,7 @@
     "status": "completed"
   },
   {
-    "content": "Update color scheme to logo palette (Navy #1A237E, Orange #F57C00, Magenta/Pink #E91E63)",
+    "content": "Update color scheme to logo palette (Navy #1a1b5c, Orange #f57c00, Magenta #e91e63)",
     "status": "completed"
   },
   {
@@ -40,11 +40,11 @@
     "status": "completed"
   },
   {
-    "content": "Run testing agent for end-to-end validation",
-    "status": "in_progress"
+    "content": "Run testing agent for end-to-end validation — 100% pass (32/32 backend, all frontend)",
+    "status": "completed"
   },
   {
-    "content": "Push rebranded code back to GitHub as 'Indian Profiles'",
-    "status": "pending"
+    "content": "Push rebranded code to GitHub + rename repo to IndianProfiles",
+    "status": "completed"
   }
 ]
