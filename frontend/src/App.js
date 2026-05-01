@@ -10,7 +10,9 @@ import ConstituencyPage from "./pages/public/ConstituencyPage";
 import DistrictPage from "./pages/public/DistrictPage";
 import DivisionPage from "./pages/public/DivisionPage";
 import LeaderProfilePage from "./pages/public/LeaderProfilePage";
+import LeadersPage from "./pages/public/LeadersPage";
 import ArticlePage from "./pages/public/ArticlePage";
+import ArticlesPage from "./pages/public/ArticlesPage";
 import GetInvolvedPage from "./pages/public/GetInvolvedPage";
 
 // Admin Pages
@@ -135,7 +137,9 @@ function App() {
           <Route path="/constituency/:id" element={<ConstituencyPage />} />
           <Route path="/district/:id" element={<DistrictPage />} />
           <Route path="/division/:id" element={<DivisionPage />} />
+          <Route path="/leaders" element={<LeadersPage />} />
           <Route path="/leader/:id" element={<LeaderProfilePage />} />
+          <Route path="/articles" element={<ArticlesPage />} />
           <Route path="/article/:id" element={<ArticlePage />} />
           <Route path="/get-involved" element={<GetInvolvedPage />} />
 

@@ -34,6 +34,12 @@ const PublicFooter = () => {
                 <Link to="/" className="text-blue-100/70 hover:text-brand-orange transition-colors">Home</Link>
               </li>
               <li>
+                <Link to="/leaders" className="text-blue-100/70 hover:text-brand-orange transition-colors">Leaders</Link>
+              </li>
+              <li>
+                <Link to="/articles" className="text-blue-100/70 hover:text-brand-orange transition-colors">Articles</Link>
+              </li>
+              <li>
                 <Link to="/get-involved" className="text-blue-100/70 hover:text-brand-orange transition-colors">Get Involved</Link>
               </li>
               <li>

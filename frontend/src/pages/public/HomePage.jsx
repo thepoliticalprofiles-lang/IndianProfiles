@@ -5,7 +5,7 @@ import PublicNavbar from "../../components/shared/PublicNavbar";
 import PublicFooter from "../../components/shared/PublicFooter";
 import { api } from "../../App";
 
-const heroImage = "https://pbs.twimg.com/media/D3YczzZWsAEmLLU?format=jpg&name=medium";
+const heroImage = "/images/hero-bg.jpg";
 
 // Debounce hook for search
 const useDebounce = (value, delay) => {
@@ -596,6 +596,14 @@ const HomePage = () => {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-600 mb-2">Our Representatives</p>
                 <h2 className="text-2xl sm:text-3xl font-bold text-stone-900">Leaders</h2>
               </div>
+              <Link
+                to="/leaders"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-brand-orange hover:text-brand-magenta transition-colors"
+                data-testid="home-view-all-leaders"
+              >
+                View All Leaders
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -636,6 +644,14 @@ const HomePage = () => {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-600 mb-2">Latest Updates</p>
                 <h2 className="text-2xl sm:text-3xl font-bold text-stone-900">Development Works</h2>
               </div>
+              <Link
+                to="/articles"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-brand-orange hover:text-brand-magenta transition-colors"
+                data-testid="home-view-all-articles"
+              >
+                View All Articles
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

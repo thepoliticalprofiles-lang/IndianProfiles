@@ -28,6 +28,12 @@ const PublicNavbar = () => {
             <Link to="/" className="text-stone-700 hover:text-brand-navy font-medium transition-colors" data-testid="nav-home">
               Home
             </Link>
+            <Link to="/leaders" className="text-stone-700 hover:text-brand-navy font-medium transition-colors" data-testid="nav-leaders">
+              Leaders
+            </Link>
+            <Link to="/articles" className="text-stone-700 hover:text-brand-navy font-medium transition-colors" data-testid="nav-articles">
+              Articles
+            </Link>
             <Link to="/get-involved" className="text-stone-700 hover:text-brand-navy font-medium transition-colors" data-testid="nav-get-involved">
               Get Involved
             </Link>
@@ -52,6 +58,12 @@ const PublicNavbar = () => {
             <div className="flex flex-col gap-4">
               <Link to="/" className="text-stone-700 hover:text-brand-navy font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Home
+              </Link>
+              <Link to="/leaders" className="text-stone-700 hover:text-brand-navy font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Leaders
+              </Link>
+              <Link to="/articles" className="text-stone-700 hover:text-brand-navy font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Articles
               </Link>
               <Link to="/get-involved" className="text-stone-700 hover:text-brand-navy font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Get Involved
